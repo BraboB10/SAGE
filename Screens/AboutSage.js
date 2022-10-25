@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { StyleSheet, Button, View, SafeAreaView, Text, Alert, ScrollView } from "react-native";
-
-const AboutSage = ()=>{
-    return(
+import AnimatedLinearGradient, {presetColors} from './AnimatedGradient'
+class AboutSage extends Component {
+  render() {
+    return (
+      <AnimatedLinearGradient customColors={presetColors.trans} speed={3000}>
         <View style={styles.mainView}>
-            <Text>About Sage</Text>
+          
         </View>
-
-    )
+      </AnimatedLinearGradient>
+    );
+  }
 }
 
 const styles = StyleSheet.create({

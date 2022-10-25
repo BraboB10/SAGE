@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { StatusBar, Animated, StyleSheet, Button, View, SafeAreaView, Text, Alert, ScrollView } from "react-native";
 import Homepage from './Screens/Homepage';
 import AboutSage from './Screens/AboutSage';
-import EventDates from './Screens/EventDates';
+import Events from './Screens/Events';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SplashScreen from 'react-native-splash-screen';
@@ -21,7 +21,7 @@ const App: () => Node = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Homepage" component={Homepage} options={{headerShown:false,}} />
-        <Stack.Screen name="EventDates" component={EventDates} options={{headerShown:false}} />
+        <Stack.Screen name="Events" component={Events} options={{headerShown:true}} />
         <Stack.Screen name="AboutSage" component={AboutSage} options={{headerShown:false}} />
       </Stack.Navigator>
     </NavigationContainer>
